@@ -8,7 +8,7 @@ const Emitter = require('events')
 app.use(express.json())
 app.use(
     cors({
-        origin: 'https://pizza-delivery-mern-client.vercel.app',
+        origin: 'https://pizza-app-client.vercel.app',
         credentials: true
     })
 )
@@ -30,7 +30,7 @@ const server = app.listen(PORT, () => {
 
 const io = require('socket.io')(server, {
     cors: {
-        origin: "https://pizza-delivery-mern-client.vercel.app"
+        origin: "https://pizza-app-client.vercel.app"
     }
 })
 
